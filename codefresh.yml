@@ -16,7 +16,7 @@ steps:
     #Dockerfile location should be relative to the working directory
     dockerfile: Dockerfile
       
-push_to_registry:
+  push_to_registry:
     title: Pushing to Docker Registry (with credentials)
     type: push
 
