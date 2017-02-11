@@ -4,5 +4,15 @@ steps:
     image: maven
     working_directory: ${{main_clone}}
     commands:
-      - mvn clean package 
+      - mvn clean package
+      
+  build_image:
+    title: Building Image
+    type: build
+    #Important: rename this image to to a valid repository in your registry. For example: myUserName/vote
+    image_name: rmortale/wildfly-fresh
+    #The directory should be relative to git repository that is used for cloning
+    working_directory: ${{main_clone}}
+    #Dockerfile location should be relative to the working directory
+    dockerfile: Dockerfile
       
