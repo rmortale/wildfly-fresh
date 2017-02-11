@@ -1,7 +1,7 @@
 version: '1.0'
 steps:
   test_all_the_code:
-    image_name: maven
+    image: maven
     working_directory: ${{main_clone}}
     commands:
       - mvn clean package 
