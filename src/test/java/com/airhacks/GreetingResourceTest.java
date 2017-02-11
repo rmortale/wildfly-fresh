@@ -16,7 +16,7 @@ public class GreetingResourceTest {
 
     @Test
     public void testSomeMethod() {
-        assertTrue(true);
+        assertTrue(false);
     }
 
 }
